@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Friends | Kakao Clone</title>
+  </head>
+
+  <!-- 스타투스 바 -->
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54 </span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 헤더 -->
+    <!-- 왼쪽에 (friends), 오른쪽에 (아이콘 2개) -->
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Friends</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <span class="header__icon">
+          <a href="settings.html">
+            <a href="settings.html">
+              <i class="fas fa-cog"></i>
+            </a>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <!-- 친구 목록 창 -->
+    <!-- 친구 목록 창은 3가지 파트가 있다. -->
+    <!-- 1. 내프로필 | 2. plus 친구창 | 3. 친구목록 -->
+
+    <!-- 최하단 네비게이션 바 -->
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/Solskjaer.jpg" class="g-avatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Ole Gunnar Solskjær
+              </span>
+              <span class="friend__status">
+                Happy day
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- plus friend 칸 -->
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus friend</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/unnamed.png" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Plus friend--lg
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 진짜 친구 목록 시작! -->
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/IMG_1540.jpeg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> Paul Pogba </span>
+              <span class="friend__status">
+                hungry
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                Black Pink (FT Teddy)
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/mama.jpeg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> Martial </span>
+              <span class="friend__status">
+                hungry
+              </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/gea.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> De Gea </span>
+              <span class="friend__status">
+                hungry
+              </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/sancho.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> Jadon Sancho </span>
+              <span class="friend__status">
+                hungry
+              </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/bruno.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> Bruno Fernandes </span>
+              <span class="friend__status">
+                hungry
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                Fall Out Boy (FT Stan)
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+
+      
+
+    <!-- 최하단 네비게이션 바 -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="fas fa-user"></i
+          ></a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">5</div>
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!</span>
+    </div>
+  </body>
+</html>
